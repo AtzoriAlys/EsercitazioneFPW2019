@@ -12,13 +12,87 @@ and open the template in the editor.
         <meta name="author" content="Atzori Alys">
         <meta name="keywords" content="FPW, Progetto, HTML, CSS, Java">
         <meta name="description" content="Registrazione a Esercitazioni di FPW">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     <body>
         
-        <div>
+        <header>
+            <div id="logo">
+                <img id="logoimg" src="img/homepen.png" alt="pen on a notebook" title="This Is An Image">
+                <h1 id="logottl"> Sign Up, But It's Useless </h1>
+            </div>
+        </header>
         
-            <h1> Sign Up, But It's Useless </h1>
-            
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="https://google.com"> Vai su Google </a> </li>
+                <li> <a href="articles.html"> Articoli Inventati </a> </li>
+                <li> <a href="signup.html"> Sign Up Inutile </a> </li>
+            </ul>
+        </nav>
+        
+        <div class="row">
+        
+            <aside class="col-2">
+                <div>
+                    <ol>
+                        <li> Article 1 </li>
+                        <li> Article 2 </li>
+                        <li> Article 3 </li>
+                        <li> Article 4 </li>
+                    </ol>
+                </div>
+            </aside>
+
+            <main class="col-10">
+
+                <form action="index.html" method="post">
+
+                    <label for="id_nomeutente">Nome: </label>
+                    <input type="text" name="nomeUtente" id="id_nomeutente" value="Mario Rossi"/>
+
+                    <br/>
+
+                    <label for="id_username">Username: </label>
+                    <input type="text" name="userName" id="id_username" value="username"/>
+
+                    <br/> 
+
+                    <label for="id_password">Password: </label>
+                    <input type="password" name="password" id="id_password" value="oscurato"/>
+                    <br/>
+
+                    <label for="scrittore">Scrittore: </label>
+                    <input type="radio" name="tipo_utente" id="scrittore" value="scrittore">
+
+                    <br/>
+
+                    <label for="autore">Autore: </label>
+                    <input type="radio" name="tipo_utente" id="autore" value="autore">
+
+                    <p>Colore preferito</p>
+                    <select size="5" multiple>
+                        <option value="red">Rosso</option>
+                        <option value="white">Bianco</option>
+                        <option value="grey">Grigio</option>
+                        <option value="yellow">Giallo</option>
+                        <option value="green">Verde</option>
+                    </select>
+
+                    <br>
+                    <button type="submit"> Submit And Do Nothing </button>
+
+                </form>
+
+            </main>
+
+        </div>
+        
+        <div class="row">
+            <footer class="col-12">
+                <p>Developed by Atzori Alys</p>
+            </footer>
         </div>
         
     </body>
